@@ -230,7 +230,7 @@ export default function Home() {
               people <em>love</em>
             </h1>
             <p className="hero-desc">
-              NY Studio is a indie studio building delightful mobile apps. 
+              NY Studio is an indie studio building delightful mobile apps. 
               Apps made with love, used with joy.
             </p>
 
