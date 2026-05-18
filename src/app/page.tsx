@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -217,7 +219,7 @@ export default function Home() {
       <div className="content">
         <div className="wrapper">
           <nav>
-            <a href="/" className="logo">NY<span>.</span>STUDIO</a>
+            <Link href="/" className="logo">NY<span>.</span>STUDIO</Link>
             <span className="nav-location">Aktobe, Kazakhstan</span>
           </nav>
 
@@ -233,14 +235,14 @@ export default function Home() {
             </p>
 
             <p className="apps-label">Our apps (more to come!)</p>
-            <a href="https://nomnombear.com" target="_blank" rel="noopener noreferrer" className="app-card">
+            <Link href="https://nomnombear.com" target="_blank" rel="noopener noreferrer" className="app-card">
               <div className="app-icon">🐻</div>
               <div className="app-info">
                 <span className="app-name">NomNomBear</span>
                 <span className="app-tagline">AI-powered recipe & nutrition app</span>
               </div>
               <span className="app-badge">Live</span>
-            </a>
+            </Link>
           </section>
 
           <hr className="divider" />
@@ -248,8 +250,8 @@ export default function Home() {
           <footer>
             <span className="footer-copy">© {new Date().getFullYear()} NY Studio. All rights reserved.</span>
             <div className="footer-links">
-              <a href="https://nomnombear.com">NomNomBear</a>
-              <a href="mailto:nurbek@nystudio.dev">Contact</a>
+              <Link href="https://nomnombear.com">NomNomBear</Link>
+              <Link href="mailto:nurbek@nystudio.dev">Contact</Link>
             </div>
           </footer>
         </div>
