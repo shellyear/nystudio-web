@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -219,27 +220,44 @@ export default function Home() {
       <div className="content">
         <div className="wrapper">
           <nav>
-            <Link href="/" className="logo">NY<span>.</span>STUDIO</Link>
+            <Link href="/" className="logo">
+              NY<span>.</span>STUDIO
+            </Link>
             <span className="nav-location">Aktobe, Kazakhstan</span>
           </nav>
 
           <section className="hero">
             <p className="hero-eyebrow">Independent App Studio</p>
             <h1 className="hero-title">
-              Crafting apps<br />
+              Crafting apps
+              <br />
               people <em>love</em>
             </h1>
             <p className="hero-desc">
-              NY Studio is an indie studio building delightful mobile apps. 
-              Apps made with love, used with joy.
+              NY Studio is an indie studio building delightful mobile apps. Apps
+              made with love, used with joy.
             </p>
 
             <p className="apps-label">Our apps (more to come!)</p>
-            <Link href="https://nomnombear.com" target="_blank" rel="noopener noreferrer" className="app-card">
-              <div className="app-icon">🐻</div>
+            <Link
+              href="https://nomnombear.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="app-card"
+            >
+              <div className="app-icon">
+                <Image
+                  src="/nomnombear-logo-192x192.png"
+                  alt="NomNomBear"
+                  width={48}
+                  height={48}
+                />
+              </div>
               <div className="app-info">
                 <span className="app-name">NomNomBear</span>
-                <span className="app-tagline">AI-powered recipe & nutrition app</span>
+                <span className="app-tagline">
+                  AI-powered recipe & nutrition app
+                </span>
               </div>
               <span className="app-badge">Live</span>
             </Link>
@@ -248,7 +266,9 @@ export default function Home() {
           <hr className="divider" />
 
           <footer>
-            <span className="footer-copy">© {new Date().getFullYear()} NY Studio. All rights reserved.</span>
+            <span className="footer-copy">
+              © {new Date().getFullYear()} NY Studio. All rights reserved.
+            </span>
             <div className="footer-links">
               <Link href="https://nomnombear.com">NomNomBear</Link>
               <Link href="mailto:nurbek@nystudio.dev">Contact</Link>
