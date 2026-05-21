@@ -179,6 +179,9 @@ export default function Home() {
         }
 
         .footer-copy {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
           font-size: 0.75rem;
           color: var(--muted);
         }
@@ -266,9 +269,12 @@ export default function Home() {
           <hr className="divider" />
 
           <footer>
-            <span className="footer-copy">
-              © {new Date().getFullYear()} NY Studio. All rights reserved.
-            </span>
+            <div className="footer-copy">
+              <span>© {new Date().getFullYear()} NY Studio. All rights reserved.</span>
+              <span>
+                D-U-N-S® Number: 374486901
+              </span>
+            </div>
             <div className="footer-links">
               <Link href="https://nomnombear.com">NomNomBear</Link>
               <Link href="mailto:nurbek@nystudio.dev">Contact</Link>
