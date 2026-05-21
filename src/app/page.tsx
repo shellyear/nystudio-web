@@ -270,14 +270,14 @@ export default function Home() {
 
           <footer>
             <div className="footer-copy">
-              <span>© {new Date().getFullYear()} NY Studio. All rights reserved.</span>
               <span>
-                D-U-N-S® Number: 374486901
+                © {new Date().getFullYear()} NY Studio. All rights reserved.
               </span>
+              <span>D-U-N-S® Number: 374486901</span>
             </div>
             <div className="footer-links">
               <Link href="https://nomnombear.com">NomNomBear</Link>
-              <Link href="mailto:nurbek@nystudio.dev">Contact</Link>
+              <Link href="mailto:nurbek@nystudio.dev">nurbek@nystudio.dev</Link>
             </div>
           </footer>
         </div>
