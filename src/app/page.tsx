@@ -103,6 +103,12 @@ export default function Home() {
           margin-bottom: 1rem;
         }
 
+        .apps-row {
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+
         .app-card {
           display: inline-flex;
           align-items: center;
@@ -242,28 +248,53 @@ export default function Home() {
             </p>
 
             <p className="apps-label">Our apps (more to come!)</p>
-            <Link
-              href="https://nomnombear.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="app-card"
-            >
-              <div className="app-icon">
-                <Image
-                  src="/nomnombear-logo-192x192.png"
-                  alt="NomNomBear"
-                  width={48}
-                  height={48}
-                />
-              </div>
-              <div className="app-info">
-                <span className="app-name">NomNomBear</span>
-                <span className="app-tagline">
-                  AI-powered recipe & nutrition app
-                </span>
-              </div>
-              <span className="app-badge">Live</span>
-            </Link>
+            <div className="apps-row">
+              <Link
+                href="https://yetter.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="app-card"
+              >
+                <div className="app-icon">
+                  <Image
+                    src="/yetter-logo-512x512.png"
+                    alt="Yetter"
+                    width={48}
+                    height={48}
+                    style={{ borderRadius: 10 }}
+                  />
+                </div>
+                <div className="app-info">
+                  <span className="app-name">Yetter</span>
+                  <span className="app-tagline">
+                    Free calorie & step counter
+                  </span>
+                </div>
+                <span className="app-badge">Live</span>
+              </Link>
+              <Link
+                href="https://nomnombear.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="app-card"
+              >
+                <div className="app-icon">
+                  <Image
+                    src="/nomnombear-logo-192x192.png"
+                    alt="NomNomBear"
+                    width={48}
+                    height={48}
+                  />
+                </div>
+                <div className="app-info">
+                  <span className="app-name">NomNomBear</span>
+                  <span className="app-tagline">
+                    AI-powered recipe & nutrition app
+                  </span>
+                </div>
+                <span className="app-badge">Live</span>
+              </Link>
+            </div>
           </section>
 
           <hr className="divider" />
@@ -276,6 +307,7 @@ export default function Home() {
               <span>D-U-N-S® Number: 374486901</span>
             </div>
             <div className="footer-links">
+              <Link href="https://yetter.app">Yetter</Link>
               <Link href="https://nomnombear.com">NomNomBear</Link>
               <Link href="mailto:nurbek@nystudio.dev">nurbek@nystudio.dev</Link>
             </div>
